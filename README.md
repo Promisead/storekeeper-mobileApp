@@ -44,7 +44,7 @@ A mobile inventory management application built with React Native and Expo, feat
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/codabytez/storekeeper-app.git
+git https://github.com/Promisead/storekeeper-mobileApp.git
 cd storekeeper-app
 ```
 

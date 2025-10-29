@@ -40,8 +40,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "777be7e4-1bd1-4566-8fc4-33e89a42cf87"
+        "projectId": "5405e982-beac-4b4a-8b3a-5aa34ffd5f3a"
       }
-    }
+    },
+    "owner": "the_champions"
   }
 }
