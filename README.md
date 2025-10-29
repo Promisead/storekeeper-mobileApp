@@ -136,7 +136,7 @@ CREATE TABLE products (
 
 | Home Screen                   | Add Product                 | Product Detail                    |
 | ----------------------------- | --------------------------- | --------------------------------- |
-| ![Home](screenshots/) | ![Add](screenshots/) | ![Detail](screenshots/) |
+| ![Home](screenshots/home.PNG) | ![Product 1](screenshots/product1.PNG) | ![Product 2](screenshots/product2.PNG) |
 
 ## Usage
 
