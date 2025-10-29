@@ -1,72 +1,88 @@
-# Storekeeper App
+# 📱 Storekeeper App
 
-A mobile inventory management application built with React Native and Expo, featuring local SQLite database storage and native camera integration.
+A **mobile inventory management application** built with **React Native** and **Expo**, featuring **local SQLite database storage**, smooth **camera integration**, and a **modern user-friendly interface**.
 
-## Features
+---
 
-- ✅ **CRUD Operations**: Create, Read, Update, and Delete products
-- 📦 **SQLite Database**: Persistent local storage using expo-sqlite
-- 📸 **Camera Integration**: Capture or upload product images using native camera
-- 🎨 **Clean UI**: Modern, responsive design with smooth animations
-- 🔄 **Real-time Updates**: Pull-to-refresh functionality
-- 🎯 **TypeScript**: Fully typed codebase for better developer experience
+## 🚀 Overview
 
-## Try it Online
+Storekeeper helps small business owners and retailers manage their product inventory seamlessly — offline or online.  
+It allows you to **add, edit, delete, and view** products, with real-time updates and local persistence via SQLite.
 
-[**Run on Appetize**](https://appetize.io/app/)
+---
 
-## Demo Video
+## ✨ Features
 
-[**Watch Demo Video**](https://drive.google.com/file/)
+- ✅ **Full CRUD Support** – Create, Read, Update, and Delete products effortlessly  
+- 📦 **Local Storage** – Persistent data storage using `expo-sqlite`  
+- 📸 **Camera Integration** – Capture or upload product images directly from your device  
+- 🎨 **Modern UI/UX** – Clean, responsive design with smooth animations  
+- 🔄 **Real-Time Refresh** – Pull-to-refresh functionality for live updates  
+- 🧠 **TypeScript Powered** – Type-safe, scalable, and developer-friendly codebase  
 
-## Download APK
+---
 
-[**Download Latest Release (v1.0.0)**](https://drive.google.com/file)
+## 🌐 Live Demo
 
-## Tech Stack
+- ▶️ [**Run on Appetize**](https://appetize.io/app/b_6avka227oyusjvz3sdhh5jgg6i)  
+- 🎥 [**Watch Demo Video**](https://drive.google.com/file/d/1LCQLgn8gKbRPGD3Vht2boM1X5TOpQx69/view?usp=sharing)
 
-- **Framework**: React Native with Expo
-- **Language**: TypeScript
-- **Database**: SQLite (expo-sqlite)
-- **Navigation**: Expo Router
-- **Camera**: expo-camera & expo-image-picker
-- **Icons**: @expo/vector-icons
+---
 
-## Prerequisites
+## 🧰 Tech Stack
 
-- Node.js (v18 or higher)
-- npm or yarn or pnpm
+| Category | Technology |
+|-----------|-------------|
+| **Framework** | React Native (Expo) |
+| **Language** | TypeScript |
+| **Database** | SQLite (`expo-sqlite`) |
+| **Navigation** | Expo Router |
+| **Camera & Media** | `expo-camera`, `expo-image-picker` |
+| **Icons** | `@expo/vector-icons` |
+
+---
+
+## ⚙️ Prerequisites
+
+Before starting, make sure you have:
+
+- Node.js **v18+**
+- npm, yarn, or pnpm
 - Expo CLI
 - Android Studio (for Android) or Xcode (for iOS)
 
-## Installation & Setup
+---
 
-### 1. Clone the Repository
+## 🧩 Installation & Setup
+
+### 1️⃣ Clone the Repository
 
 ```bash
-git https://github.com/Promisead/storekeeper-mobileApp.git
+git clone https://github.com/Promisead/storekeeper-mobileApp.git
 cd storekeeper-app
 ```
 
-### 2. Install Dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Run the Development Server
+### 3️⃣ Start the Development Server
 
 ```bash
 npx expo start
 ```
 
-### 4. Run on Device/Emulator
+### 4️⃣ Run the App
 
-- **Android**: Press `a` in the terminal or scan QR code with Expo Go app
-- **iOS**: Press `i` in the terminal (macOS only)
-- **Web**: Press `w` in the terminal
+- **Android** → Press `a` or scan the QR code in the terminal with **Expo Go**  
+- **iOS (macOS only)** → Press `i`  
+- **Web** → Press `w`
 
-## Building for Production
+---
+
+## 🏗️ Building for Production
 
 ### Android APK
 
@@ -77,48 +93,52 @@ npm install -g eas-cli
 # Login to Expo
 eas login
 
-# Configure build
+# Configure the build
 eas build:configure
 
-# Build APK
+# Build the APK
 eas build -p android --profile preview
 ```
 
-### iOS
+### iOS Build
 
 ```bash
 eas build -p ios --profile preview
 ```
 
-## Project Structure
+---
 
-```javascript
+## 🗂️ Project Structure
+
+```plaintext
 storekeeper-app/
 ├── app/
 │   ├── (tabs)/
-│   │   ├── index.tsx          # Home/Products List
-│   │   └── add-product.tsx    # Add Product Screen
-│   |   └── _layout.tsx        # Tabs Layout
-│   ├── product/[id].tsx       # Product Details/Edit
+│   │   ├── index.tsx          # Home / Products List
+│   │   ├── add-product.tsx    # Add Product Screen
+│   │   └── _layout.tsx        # Tabs Layout
+│   ├── product/[id].tsx       # Product Details & Edit Screen
 │   ├── _layout.tsx
 │   └── +not-found.tsx
 ├── components/
-│   ├── ProductCard.tsx        # Product item in list
-│   ├── ProductForm.tsx        # Form for add/edit product
-│   ├── CameraButton.tsx       # Camera button component
-│   └── ImagePicker.tsx        # Image picker component
+│   ├── ProductCard.tsx        # Product item component
+│   ├── ProductForm.tsx        # Add/Edit product form
+│   ├── CameraButton.tsx       # Camera action button
+│   └── ImagePicker.tsx        # Image picker utility
 ├── database/
 │   ├── database.ts            # SQLite setup
-│   └── schema.ts              # Database schema
+│   └── schema.ts              # Database schema definition
 ├── services/
-│   ├── productService.ts      # CRUD operations
-│   └── imageService.ts        # Image handling
+│   ├── productService.ts      # CRUD logic
+│   └── imageService.ts        # Image processing
 ├── types/
-│   └── product.ts             # TypeScript types
+│   └── product.ts             # TypeScript interfaces
 └── README.md
 ```
 
-## Database Schema
+---
+
+## 🧮 Database Schema
 
 ```sql
 CREATE TABLE products (
@@ -132,44 +152,45 @@ CREATE TABLE products (
 );
 ```
 
-## Screenshots
+---
 
-| Product  one               | Product Detail Two                    |
-| --------------------------- | --------------------------------- |
+## 🖼️ Screenshots
+
+| Product List | Product Detail |
+|---------------|----------------|
 | ![Product 1](screenshots/product1.PNG) | ![Product 2](screenshots/product2.PNG) |
-
-## Usage
-
-1. **View Products**: Launch the app to see your inventory list
-2. **Add Product**: Tap the + button, fill in details, optionally add a photo
-3. **Edit Product**: Tap on any product, then tap the edit icon
-4. **Delete Product**: Open product details and tap the delete button
-5. **Take Photo**: Use camera icon to capture or select product images
-
-## Permissions
-
-The app requires the following permissions:
-
-- **Camera**: To capture product photos
-- **Photo Library**: To select existing images
-
-## Known Issues
-
-- None currently reported
-
-## Author
-
-### Promise Duke
-
-- GitHub: [@promise Duke](https://github.com/Promiseead/storekeeper-mobileApp.git)
-- Twitter: [Promise Duke](https://x.com/Promisedukeac)
-
-## Acknowledgments
-
-- Built for HNG Internship Mobile Track Stage 2
-- Design inspiration from behance
-- Icons by Expo Vector Icons
 
 ---
 
-Made with ❤️ for HNG Internship
+## 📘 Usage Guide
+
+1. **View Products** → See all stored inventory items on the home screen  
+2. **Add Product** → Tap the **“+”** button to register new items  
+3. **Edit Product** → Open a product and tap the **edit icon**  
+4. **Delete Product** → Tap the **delete** button in the product detail view  
+5. **Capture Image** → Use the camera or upload from the gallery  
+
+---
+
+## 🔐 Permissions
+
+This app requires the following permissions:
+
+- **Camera** → Capture new product images  
+- **Photo Library** → Select existing photos  
+
+---
+
+## 🧩 Known Issues
+
+- No known issues at this time 🚀  
+
+---
+
+## 👨‍💻 Author
+
+**Promise Duke**  
+- 🌐 [GitHub](https://github.com/Promiseead/storekeeper-mobileApp.git)  
+- 🐦 [Twitter](https://x.com/Promisedukeac)
+
+
